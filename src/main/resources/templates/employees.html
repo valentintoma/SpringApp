@@ -13,11 +13,15 @@
     <tr>
         <th>Id</th>
         <th>First Name</th>
+        <th>Last Name</th>
+        <th>Gender</th>
     </tr>
 
     <tr th:each="employee: ${employees}">
         <td th:text="${employee.empNo}">No.</td>
         <td th:text="${employee.firstName}">First Name</td>
+        <td th:text="${employee.lastName}">Last Name</td>
+        <td th:text="${employee.gender}">Gender</td>
     </tr>
 
 </table>
